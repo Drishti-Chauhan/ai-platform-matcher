@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Platform Matcher — Apply AI</title>
+<meta name="description" content="Salesforce, Microsoft, or Google? Answer 5 questions and find out which AI platform fits how your organisation actually works.">
+<meta property="og:title" content="AI Platform Matcher — Apply AI">
+<meta property="og:description" content="Answer 5 questions. Get a personalised AI platform recommendation for your organisation.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <span class="logo-text">Apply AI</span>
+  </div>
+  <span class="logo-tag">Platform Matcher</span>
+</div>
+
+<div class="main">
+
+  <div id="intro" class="intro">
+    <p class="intro-eyebrow">Free tool by Apply AI</p>
+    <h1>Which AI platform<br>actually fits your<br><em>organisation?</em></h1>
+    <p>Salesforce, Microsoft, and Google are all competing to be your company's AI layer. Answer 5 questions and we'll tell you which one fits how you actually work — and why.</p>
+    <div class="platforms-preview">
+      <div class="platform-chip"><div class="platform-dot" style="background:#00A1E0"></div>Salesforce</div>
+      <div class="platform-chip"><div class="platform-dot" style="background:#00BCF2"></div>Microsoft</div>
+      <div class="platform-chip"><div class="platform-dot" style="background:#4285F4"></div>Google</div>
+    </div>
+    <button class="btn-start" onclick="startQuiz()">Start the matcher →</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <p class="progress-label" id="progress-label">Question 1 of 5</p>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:20%"></div></div>
+    <div id="question-screen" class="question-screen"></div>
+  </div>
+
+  <div id="loading" class="loading-screen hidden">
+    <div class="loading-orb"></div>
+    <h3>Analysing your answers...</h3>
+    <p>Our AI is weighing your organisation's profile against each platform's real strengths — not the marketing.</p>
+  </div>
+
+  <div id="result" class="result-screen hidden"></div>
+
+</div>
+
+<div class="footer">
+  Built by <a href="https://applyai.uk" target="_blank">Apply AI</a> · We help organisations build and embed AI that actually works · <a href="mailto:hello@applyai.uk">hello@applyai.uk</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
