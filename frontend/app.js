@@ -51,7 +51,7 @@ const questions = [
   }
 ];
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://ai-platform-matcher-production.up.railway.app';
 
 let currentQ = 0, answers = [], selectedValue = null;
 
